@@ -1,0 +1,286 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Segunda Aplicacion</title>
+
+		<!--grupo CSS-->
+		<link rel="stylesheet" href="css/tama-app1.min.css"/>
+		<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+		<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+		<!--grupo JavaScript-->
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="file:///J|/16_DAM/2 Parcial/Aplicaciones/js/acciones.js"></script>
+		<script src="file:///J|/16_DAM/2 Parcial/Aplicaciones/phonegap.js"></script>
+		<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+        </script>
+	</head>
+    
+	<body onLoad="MM_preloadImages('imagenes/S7-2.png','imagenes/G5-2.png')">
+		
+        <div data-role="page" id="Principal" data-theme="a">
+        	<div data-role="header">
+            	<h1>Telefonía Celular</h1>
+            </div>
+            <div data-role="main" class="ui-content">
+             	<div data-role="collapsible" data-content-theme="false">
+            		<h1>Samsung Galaxy S7</h1> 
+                  <div>
+               	  	<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','imagenes/S7-2.png',1)"><img src="imagenes/S7-1.png" width="150" height="269" id="Image1"></a></div>
+               </div>
+               <div data-role="collapsible" data-content-theme="false">
+            		<h1>LG G5</h1>
+                <div>
+           	     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','imagenes/G5-2.png',1)"><img src="imagenes/G5-1.png" alt="LG G5" width="150" height="300" id="Image2"></a> </div>
+               </div>
+             </div>
+           
+             <div>
+             	<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+                <li class="ui-first-child ui-last-child">
+                	<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                    	<h2>Definición</h2>
+                        <p>Se muestra el la definición de la telefonia celular</p>
+					</a>
+                </li>
+                <li class="ui-first-child ui-last-child">
+                	<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                    	<h2>Historia de la telefonia celular</h2>
+                        <p>Se muestra la historia de la telefonia celular</p>
+					</a>
+                </li>
+                <li class="ui-first-child ui-last-child">
+                	<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                    	<h2>Clasificaión</h2>
+                        <p>Se muestra la clasificación de los celulares</p>
+					</a>
+                </li>
+                <li class="ui-first-child ui-last-child">
+                	<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                    	<h2>Compañias</h2>
+                        <p>Se muestran las compañias que ofrecen el servicio de telefonia celular en México</p>
+					</a>
+                </li>
+                </ul>
+			</div>
+           
+            <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+            	<div>
+                	<img src="imagenes/logo.png" height="36">
+                </div>
+                <div>
+                	<h4>Aplicacion Dos</h4>
+                    <h4>Jesus Javier Leon Rangel</h4>
+                </div>
+			</div>
+		</div>
+
+		<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+        	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+            	<h1>Definición</h1>
+			</div>
+            <div data-role="content" >
+            	<div>
+                	<p>Entendemos por telefonía celular a aquel sistema de comunicación que se da a partir del uso de elementos pequeños o 'células' que se conocen como celulares. La telefonía celular es uno de los avances más importantes y difundidos en el mundo en los últimos años y su llegada a millones de personas tiene que ver con la facilidad y la comodidad que otorga a sus clientes para comunicarse desde cualquier lugar y a cualquier hora.</p><!--via Definicion ABC http://www.definicionabc.com/tecnologia/telefonia-celular.php-->
+                </div>
+                
+            <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+            	<div>
+                	<img src="imagenes/logo.png" height="36">
+                </div>
+                <div>
+	            	<h4>APP2 JJLR</h4>
+                </div>
+            </div>
+		</div>
+        </div>
+        
+        <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+        	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+            	<h1>Historia de la Telefonia Celular</h1>
+			</div>
+            <div data-role="content">
+            	<div>
+                	<h2>Primera Generación</h2>
+
+					<p>La primera generación de teléfonos celulares surge con la aparición en el mercado mundial del conocido "ladrillo" (DynaTac 8000X) a fines de los años 80. Estos equipos tenían tecnología analógica para uso restringido de comandos de voz. La tecnología predominante de esta generación fue la AMPS (Advanced Mobile Phone System)</p>
+
+                    
+                    <div data-role="collapsible" data-content-theme="false">
+                        <h1>Primer Generación</h1>
+						<div>
+							<img src="imagenes/DynaTAC 8000x.png" width="320" height="383">
+							<p class="blanco">Motorola DynaTAC 8000x</p>
+   	                	</div>
+	                </div>   
+                    <br>
+                    <h2>Segunda Generación</h2>
+					<p>Ésta surge en la década de los 90, con teléfonos celulares con tecnología digital y con ciertos beneficios muy valorados, como duración extendida de la batería, y mayor definición y calidad de sonido. Estos teléfonos, ya tenían la posibilidad de enviar y recibir mensajes de texto (SMS). A fines de la década se produjo el auge de los teléfonos celulares; la gente común se agregó a la lista de usuarios, favorecidos por el precio y la competencia entre las diferentes compañías. Como fueron los Nokia 1100, Sagem XT, Motorola C200 o C 115, Alcatel, Siemens A56 o Sony Ericsson T106, todos con precios muy bajos y con seductoras promociones.</p>
+
+                    <div data-role="collapsible" data-content-theme="false">
+                        <h1>Segunda Generación</h1>
+						<div>
+                        	<img src="imagenes/nokia-3310.png" width="220" height="383">					
+							<p class="blanco">NOKIA 3310</p>
+   	                	</div>
+	                </div>
+                    <br>
+                    <h2>Tercera Generación</h2>
+					<p>En esta generación existían una variedad infinita de modelos de teléfonos con cámaras de foto y video, pantalla color, conexión rápida a Internet (tecnología EDGE), envío de mensajes multimedia (MMS) y acceso a casilla de e-mail (POP3), además de algunos juegos y aplicaciones simples.</p>
+                    <div data-role="collapsible" data-content-theme="false">
+                        <h1>Tercera Generación</h1>
+						<div>
+							<img src="imagenes/t395.png" width="320" height="383">
+							<p class="blanco">LG T-395</p>
+   	                	</div>
+	                </div>
+                    <br>
+                    <h2>Cuarta Generación</h2>
+					<p>El Smartphone, una impresionante mezcla entre teléfono y computadora, y nuevo estándar de comunicaciones, sin duda alguna rompió el esquema de consumo de contenidos al cual se estaba acostumbrados desde hace años, ya que gracias a la velocidad de transmisión de datos que puede alcanzar 4G podemos consumir sin ninguna clase de problemas contenidos de video en alta definición, música en streaming y mil cosas más, además de que por supuesto todo lo que tenga que ver con nuestro trabajo lo podremos realizar varias veces más rápido y sin tantas complicaciones, en el lugar y momento en donde nos encontremos, puntos que hoy son vitales para el desenvolvimiento diario de millones de personas alrededor del mundo.</p>
+                    <div data-role="collapsible" data-content-theme="false">
+                        <h1>Cuarta Generación</h1>
+						<div>
+							<img src="imagenes/G5-1.png" width="220" height="383">
+							<p class="blanco">LG G5</p>
+   	                	</div>
+	                </div>
+                    
+                    
+                    
+                </div>
+            </div>
+            <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+            	<div>
+                	<img src="imagenes/logo.png" height="36">
+                </div>
+                <div>
+	            	<h4>APP2 JJLR</h4>
+                </div>
+            </div>
+		</div>
+        
+        
+        <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+        	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+            	<h1>Clasificación</h1>
+			</div>
+            <div data-role="content">
+            	<div>
+                	<p>Los smartphones se clasifican desde los más bajos o básicos hasta los más altos o buques insignia en grupos denominados "gamas", los celulares que se encuentran en las mismas gamas poseen iguales o similiares especificaciones con respescto al hardware (Cámara, RAM, memoria interna, procesador, etc). Se clasifican según: el hardware, aspecto, capacidades y relación calidad-precio.</p><p>Cabe recalcar que un smartphone último modelo no es necesariamente mejor que el anterior.</p>
+					<ul>Existen tres gamas principales:
+						<li>
+                        	<div data-role="collapsible" data-content-theme="false">
+                            	<h1>Gama Baja</h1>
+                            	<div>
+                                	<img src="imagenes/ZTE Blade V7 Lite.png" width="380" height="315">
+                                    <p class="blanco">ZTE Blade V7 Lite</p>
+                            	</div>
+	                        </div>   
+                       </li>
+                       <li>
+                        	<div data-role="collapsible" data-content-theme="false">
+                            	<h1>Gama Media</h1>
+                            	<div>
+                                	<img src="imagenes/Moto-g4-plus.png" width="300" height="315">
+                                    <p class="blanco">Motorola Moto G4 Plus</p>
+                            	</div>
+	                        </div>   
+                       </li>
+                       <li>
+                        	<div data-role="collapsible" data-content-theme="false">
+                            	<h1>Gama Alta</h1>
+                            	<div>
+                                	<img src="imagenes/S7-1.png" width="200" height="315">
+                                    <p class="blanco">Samsung Galaxy S7 EDGE</p>
+                            	</div>
+	                        </div>   
+                       </li>
+						
+                    </ul>
+					<p>Cada mercado o sector tiene una gama preferida es decir que en ciertos países prefieren comprar smartphones de gama media antes que comprar smartphones de gama alta, y esto se da principalmente por los costos de los smartphones</p>                   
+                </div>
+            </div>
+            <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+            	<div>
+                	<img src="imagenes/logo.png" height="36">
+                </div>
+                <div>
+	            	<h4>APP2 JJLR</h4>
+                </div>
+            </div>
+		</div>
+        
+        
+        <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+        	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+            	<h1>Compañias</h1>
+			</div>
+            <div data-role="content" align="center">
+            	<div>
+                	<div data-role="collapsible" data-content-theme="false">
+                        <h1>Telcel</h1>
+                        <div>
+                        	<img src="imagenes/TELCEL.png" width="366" height="138">
+						</div>
+					</div>
+                    
+                    <div data-role="collapsible" data-content-theme="false">
+                        <h1>Movistar</h1>
+                        <div>
+                        	<img src="imagenes/movistar.png" width="366" height="138">
+						</div>
+					</div>
+                    
+                    <div data-role="collapsible" data-content-theme="false">
+                        <h1>AT&amp;T</h1>
+                        <div>
+                        	<img src="imagenes/atandt.png" width="366" height="138">
+						</div>
+					</div>
+                    
+                    <div data-role="collapsible" data-content-theme="false">
+                        <h1>Unefon</h1>
+                        <div>
+                        	<img src="imagenes/UNEFON.png" width="366" height="138">
+						</div>
+					</div>
+                </div>
+            </div>
+            <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+            	<div>
+                	<img src="imagenes/logo.png" height="36">
+                </div>
+                <div>
+	            	<h4>APP2 JJLR</h4>
+                </div>
+            </div>
+		</div>
+       
+
+        
+        
+                
+	</body>
+</html>
